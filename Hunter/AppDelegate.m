@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "HRNavigationController.h"
+#import "HRMenuTableViewController.h"
+#import "HRSearchResultsViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,7 +18,32 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    // Create content and menu controllers
+    //
+    HRNavigationController *navigationController = [[HRNavigationController alloc] initWithRootViewController:[[HRSearchResultsViewController alloc] init]];
+    HRMenuTableViewController *menuController = [[HRMenuTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    
+    // Create frosted view controller
+    //
+    REFrostedViewController *frostedViewController = [[REFrostedViewController alloc] initWithContentViewController:navigationController menuViewController:menuController];
+    frostedViewController.direction = REFrostedViewControllerDirectionLeft;
+    frostedViewController.liveBlurBackgroundStyle = REFrostedViewControllerLiveBackgroundStyleLight;
+    frostedViewController.liveBlur = YES;
+
+    frostedViewController.delegate = self;
+    
+    // Make it a root controller
+    //
+    self.window.rootViewController = frostedViewController;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    return YES;
+    
+    
     // Override point for customization after application launch.
     return YES;
 }
