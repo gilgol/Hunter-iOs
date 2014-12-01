@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D98DE13E-14EC-4B36-ABBC-ABF2A4156482</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Hunter</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>08413E7A52C71E15953A7F8DE1148BE5E58F6ABB</key>
+		<string>https://github.com/gilgol/Hunter-iOs.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Hunter.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>08413E7A52C71E15953A7F8DE1148BE5E58F6ABB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/gilgol/Hunter-iOs.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>08413E7A52C71E15953A7F8DE1148BE5E58F6ABB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>08413E7A52C71E15953A7F8DE1148BE5E58F6ABB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Hunter</string>
+		</dict>
+	</array>
+</dict>
+</plist>
